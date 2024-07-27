@@ -1,0 +1,17 @@
+tds = trs[i].find_all('td')
+
+tds = [<td>1
+</td>, <td><span class="flagicon"><span class="mw-image-border" typeof="mw:File"><a href="/web/20230908091635/https://en.wikipedia.org/wiki/China" title="China"><img alt="China" class="mw-file-element" data-file-height="600" data-file-width="900" decoding="async" height="15" src="//web.archive.org/web/20230908091635im_/https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/23px-Flag_of_the_People%27s_Republic_of_China.svg.png" srcset="//web.archive.org/web/20230908091635im_/https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/35px-Flag_of_the_People%27s_Republic_of_China.svg.png 1.5x, //web.archive.org/web/20230908091635im_/https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/45px-Flag_of_the_People%27s_Republic_of_China.svg.png 2x" width="23"/></a></span></span> <a href="/web/20230908091635/https://en.wikipedia.org/wiki/Industrial_and_Commercial_Bank_of_China" title="Industrial and Commercial Bank of China">Industrial and Commercial Bank of China Limited</a>
+</td>, <td>5,742.86
+</td>]
+
+
+Task	Log message on completion
+Declaring known values	Preliminaries complete. Initiating ETL process
+Call extract() function	Data extraction complete. Initiating Transformation process
+Call transform() function	Data transformation complete. Initiating Loading process
+Call load_to_csv()	Data saved to CSV file
+Initiate SQLite3 connection	SQL Connection initiated
+Call load_to_db()	Data loaded to Database as a table, Executing queries
+Call run_query()	Process Complete
+Close SQLite3 connection	Server Connection closed
