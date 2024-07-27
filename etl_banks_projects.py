@@ -77,6 +77,33 @@ def extract(url, table_attribs):
     return df
 
 
-df = extract(URL, COLS_NAME)
+# Define the transform function
+""" This function accesses the CSV file for exchange rate
+    information, and adds three columns to the data frame, each
+    containing the transformed version of Market Cap column to
+    respective currencies"""
+
+
+def transform(df, csv_path):
+    exchange_rate_df = pd.read_csv(csv_path)
+
+    dict = exchange_rate_df.set_index('Currency')['Rate'].to_dict()
+    print(dict)
+
+    for val, i in zip(df['MC_USD_Billion'], range(len(df['MC_USD_Billion']))):
+        # df['MC_USD_Billion'][i] = float(val)
+        df.loc[i, "MC_USD_Billion"] = float(val)
+
+    df['MC_GBP_Billion'] = [np.round(x * dict['GBP'], 2) for x in df['MC_USD_Billion']]
+    df['MC_EUR_Billion'] = [np.round(x * dict['EUR'], 2) for x in df['MC_USD_Billion']]
+    df['MC_INR_Billion'] = [np.round(x * dict['INR'], 2) for x in df['MC_USD_Billion']]
+    # df.to_csv(csv_path)
+
+
 log_progress("Call extract() function")
+df = extract(URL, COLS_NAME)
+
+log_progress("Call transform()")
+transform(df, "exchange_rate.csv")
+df.to_csv("Bank_ranking.csv")
 print(df)
