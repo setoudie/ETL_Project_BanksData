@@ -27,10 +27,10 @@ def log_progress(log_point):
 log_progress("Declaring known values")
 
 URL = "https://web.archive.org/web/20230908091635%20/https://en.wikipedia.org/wiki/List_of_largest_banks"
-TABLE_NAME = ""
+DB_NAME = "Banks.db"
+TABLE_NAME = "Largest_banks"
 COLS_NAME = ["Rank", "Bank_Name", "MC_USD_Billion"]
-# Log points status
-log_points = ["Start", "Initialize variables", "Data loaded", "Processing step 1", "Processing step 2", "End"]
+
 
 # Define the extract function
 ''' This function aims to extract the required
@@ -100,10 +100,36 @@ def transform(df, csv_path):
     # df.to_csv(csv_path)
 
 
+""" This function saves the final data frame as a CSV file in
+    the provided path. Function returns nothing."""
+
+
+def load_csv(df, output_csv_path):
+    df.to_csv(output_csv_path)
+
+
+""" This function saves the final data frame to a database
+    table with the provided name. Function returns nothing."""
+
+
+def load_to_db(df, sql_connection, table_name):
+    df.to_sql(table_name, sql_connection, if_exists="replace", index=False)
+
+
 log_progress("Call extract() function")
 df = extract(URL, COLS_NAME)
 
 log_progress("Call transform()")
 transform(df, "exchange_rate.csv")
-df.to_csv("Bank_ranking.csv")
+
+log_progress("Call load_to_csv()")
+load_csv(df, "./Largest_banks_data.csv")
+
+log_progress("Initiate SQLite3 connection	SQL Connection initiated")
+sql_conn = sqlite3.connect("Banks.db")
+
+log_progress("Call load_to_db()")
+load_to_db(df, sql_conn, TABLE_NAME)
+
+# df.to_csv("Bank_ranking.csv")
 print(df)

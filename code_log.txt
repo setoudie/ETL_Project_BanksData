@@ -1,56 +1,16 @@
-2024-07-27 16:54:45.203686 Progress at : Declaring known values
-2024-07-27 16:54:47.484112 Progress at : Call extract() function
-2024-07-27 17:25:57.823664 Progress at : Declaring known values
-2024-07-27 17:25:57.823732 Progress at : Call extract() function
-2024-07-27 17:25:59.638035 Progress at : Call transform()
-2024-07-27 17:38:21.828556 Progress at : Declaring known values
-2024-07-27 17:38:21.828819 Progress at : Call extract() function
-2024-07-27 17:38:23.372656 Progress at : Call transform()
-2024-07-27 17:38:41.490891 Progress at : Declaring known values
-2024-07-27 17:38:41.490962 Progress at : Call extract() function
-2024-07-27 17:38:42.498699 Progress at : Call transform()
-2024-07-27 17:39:41.887994 Progress at : Declaring known values
-2024-07-27 17:39:41.888063 Progress at : Call extract() function
-2024-07-27 17:39:43.033242 Progress at : Call transform()
-2024-07-27 17:40:21.538224 Progress at : Declaring known values
-2024-07-27 17:40:21.538291 Progress at : Call extract() function
-2024-07-27 17:40:22.453231 Progress at : Call transform()
-2024-07-27 17:40:59.986549 Progress at : Declaring known values
-2024-07-27 17:40:59.986632 Progress at : Call extract() function
-2024-07-27 17:41:00.957970 Progress at : Call transform()
-2024-07-27 17:42:55.743038 Progress at : Declaring known values
-2024-07-27 17:42:55.743110 Progress at : Call extract() function
-2024-07-27 17:42:56.670809 Progress at : Call transform()
-2024-07-27 17:43:54.302352 Progress at : Declaring known values
-2024-07-27 17:43:54.302422 Progress at : Call extract() function
-2024-07-27 17:43:56.575363 Progress at : Call transform()
-2024-07-27 17:44:33.835493 Progress at : Declaring known values
-2024-07-27 17:44:33.835558 Progress at : Call extract() function
-2024-07-27 17:44:34.967090 Progress at : Call transform()
-2024-07-27 17:44:57.166436 Progress at : Declaring known values
-2024-07-27 17:44:57.166507 Progress at : Call extract() function
-2024-07-27 17:44:58.203652 Progress at : Call transform()
-2024-07-27 17:45:31.881346 Progress at : Declaring known values
-2024-07-27 17:45:31.881419 Progress at : Call extract() function
-2024-07-27 17:45:32.837873 Progress at : Call transform()
-2024-07-27 17:46:53.286930 Progress at : Declaring known values
-2024-07-27 17:46:53.287054 Progress at : Call extract() function
-2024-07-27 17:46:54.219759 Progress at : Call transform()
-2024-07-27 17:47:19.959442 Progress at : Declaring known values
-2024-07-27 17:47:19.959527 Progress at : Call extract() function
-2024-07-27 17:47:21.337611 Progress at : Call transform()
-2024-07-27 17:56:02.502614 Progress at : Declaring known values
-2024-07-27 17:56:02.502691 Progress at : Call extract() function
-2024-07-27 17:56:05.143412 Progress at : Call transform()
-2024-07-27 17:58:12.838977 Progress at : Declaring known values
-2024-07-27 17:58:12.839050 Progress at : Call extract() function
-2024-07-27 17:58:14.136719 Progress at : Call transform()
-2024-07-27 17:59:49.377817 Progress at : Declaring known values
-2024-07-27 17:59:49.377884 Progress at : Call extract() function
-2024-07-27 17:59:50.309486 Progress at : Call transform()
-2024-07-27 18:00:36.482929 Progress at : Declaring known values
-2024-07-27 18:00:36.483003 Progress at : Call extract() function
-2024-07-27 18:00:37.760582 Progress at : Call transform()
-2024-07-27 18:01:56.273050 Progress at : Declaring known values
-2024-07-27 18:01:56.273167 Progress at : Call extract() function
-2024-07-27 18:01:58.059524 Progress at : Call transform()
+2024-07-28 00:53:15.907485 Progress at : Declaring known values
+2024-07-28 00:53:15.907556 Progress at : Call extract() function
+2024-07-28 00:53:16.793366 Progress at : Call transform()
+2024-07-28 00:53:16.798464 Progress at : Call load_to_csv()
+2024-07-28 01:10:20.629804 Progress at : Declaring known values
+2024-07-28 01:10:20.629897 Progress at : Call extract() function
+2024-07-28 01:10:22.359277 Progress at : Call transform()
+2024-07-28 01:10:22.364426 Progress at : Call load_to_csv()
+2024-07-28 01:10:22.365342 Progress at : Initiate SQLite3 connection	SQL Connection initiated
+2024-07-28 01:10:22.365463 Progress at : Call load_to_db()
+2024-07-28 01:11:32.984468 Progress at : Declaring known values
+2024-07-28 01:11:32.984553 Progress at : Call extract() function
+2024-07-28 01:11:34.038079 Progress at : Call transform()
+2024-07-28 01:11:34.043288 Progress at : Call load_to_csv()
+2024-07-28 01:11:34.044238 Progress at : Initiate SQLite3 connection	SQL Connection initiated
+2024-07-28 01:11:34.044341 Progress at : Call load_to_db()
