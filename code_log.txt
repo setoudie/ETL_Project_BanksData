@@ -14,3 +14,52 @@
 2024-07-28 01:11:34.043288 Progress at : Call load_to_csv()
 2024-07-28 01:11:34.044238 Progress at : Initiate SQLite3 connection	SQL Connection initiated
 2024-07-28 01:11:34.044341 Progress at : Call load_to_db()
+2024-07-28 01:46:25.290089 Progress at : Declaring known values
+2024-07-28 01:46:25.290165 Progress at : Call extract() function
+2024-07-28 01:46:26.970720 Progress at : Call transform()
+2024-07-28 01:46:26.975911 Progress at : Call load_to_csv()
+2024-07-28 01:46:26.976816 Progress at : Initiate SQLite3 connection	SQL Connection initiated
+2024-07-28 01:46:26.976915 Progress at : Call load_to_db()
+2024-07-28 01:46:26.986837 Progress at : Process Complete
+2024-07-28 01:47:11.006285 Progress at : Declaring known values
+2024-07-28 01:47:11.006350 Progress at : Call extract() function
+2024-07-28 01:47:12.024229 Progress at : Call transform()
+2024-07-28 01:47:12.029230 Progress at : Call load_to_csv()
+2024-07-28 01:47:12.030158 Progress at : Initiate SQLite3 connection	SQL Connection initiated
+2024-07-28 01:47:12.030261 Progress at : Call load_to_db()
+2024-07-28 01:47:12.041583 Progress at : Process Complete
+2024-07-28 01:47:30.203893 Progress at : Declaring known values
+2024-07-28 01:47:30.203959 Progress at : Call extract() function
+2024-07-28 01:47:31.377692 Progress at : Call transform()
+2024-07-28 01:47:31.382820 Progress at : Call load_to_csv()
+2024-07-28 01:47:31.383734 Progress at : Initiate SQLite3 connection	SQL Connection initiated
+2024-07-28 01:47:31.383834 Progress at : Call load_to_db()
+2024-07-28 01:47:31.394123 Progress at : Process Complete
+2024-07-28 01:48:05.025461 Progress at : Declaring known values
+2024-07-28 01:48:05.025639 Progress at : Call extract() function
+2024-07-28 01:48:05.989396 Progress at : Call transform()
+2024-07-28 01:48:05.994518 Progress at : Call load_to_csv()
+2024-07-28 01:48:05.995421 Progress at : Initiate SQLite3 connection	SQL Connection initiated
+2024-07-28 01:48:05.995521 Progress at : Call load_to_db()
+2024-07-28 01:48:06.005657 Progress at : Process Complete
+2024-07-28 01:49:07.701495 Progress at : Declaring known values
+2024-07-28 01:49:07.701624 Progress at : Call extract() function
+2024-07-28 01:49:08.872799 Progress at : Call transform()
+2024-07-28 01:49:08.877878 Progress at : Call load_to_csv()
+2024-07-28 01:49:08.878782 Progress at : Initiate SQLite3 connection	SQL Connection initiated
+2024-07-28 01:49:08.878883 Progress at : Call load_to_db()
+2024-07-28 01:49:08.893822 Progress at : Process Complete
+2024-07-28 01:51:16.245649 Progress at : Declaring known values
+2024-07-28 01:51:16.245714 Progress at : Call extract() function
+2024-07-28 01:51:17.375993 Progress at : Call transform()
+2024-07-28 01:51:17.381156 Progress at : Call load_to_csv()
+2024-07-28 01:51:17.382056 Progress at : Initiate SQLite3 connection	SQL Connection initiated
+2024-07-28 01:51:17.382155 Progress at : Call load_to_db()
+2024-07-28 01:51:17.393033 Progress at : Process Complete
+2024-07-28 02:26:47.762637 Progress at : Declaring known values
+2024-07-28 02:26:47.762712 Progress at : Call extract() function
+2024-07-28 02:26:49.320420 Progress at : Call transform()
+2024-07-28 02:26:49.325548 Progress at : Call load_to_csv()
+2024-07-28 02:26:49.326217 Progress at : Initiate SQLite3 connection	SQL Connection initiated
+2024-07-28 02:26:49.326335 Progress at : Call load_to_db()
+2024-07-28 02:26:49.336366 Progress at : Process Complete

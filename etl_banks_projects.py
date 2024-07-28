@@ -31,7 +31,6 @@ DB_NAME = "Banks.db"
 TABLE_NAME = "Largest_banks"
 COLS_NAME = ["Rank", "Bank_Name", "MC_USD_Billion"]
 
-
 # Define the extract function
 ''' This function aims to extract the required
     information from the website and save it to a data frame. The
@@ -100,6 +99,7 @@ def transform(df, csv_path):
     # df.to_csv(csv_path)
 
 
+# Define the loads functions
 """ This function saves the final data frame as a CSV file in
     the provided path. Function returns nothing."""
 
@@ -116,8 +116,19 @@ def load_to_db(df, sql_connection, table_name):
     df.to_sql(table_name, sql_connection, if_exists="replace", index=False)
 
 
+# Define the run_query function
+""" This function runs the query on the database table and
+    prints the output on the terminal. Function returns nothing. """
+
+
+def run_query(query_statement, sql_connection):
+    df = pd.read_sql(query_statement, sql_connection)
+    print(df)
+
+
 log_progress("Call extract() function")
 df = extract(URL, COLS_NAME)
+df.to_csv("first.csv")
 
 log_progress("Call transform()")
 transform(df, "exchange_rate.csv")
@@ -131,5 +142,13 @@ sql_conn = sqlite3.connect("Banks.db")
 log_progress("Call load_to_db()")
 load_to_db(df, sql_conn, TABLE_NAME)
 
+query1 = """SELECT * FROM Largest_banks"""
+query2 = """SELECT AVG(MC_GBP_Billion) FROM Largest_banks"""
+query3 = """SELECT Bank_Name from Largest_banks LIMIT 5"""
+
+log_progress("Process Complete")
+run_query(query1, sql_conn)
+run_query(query2, sql_conn)
+run_query(query3, sql_conn)
 # df.to_csv("Bank_ranking.csv")
-print(df)
+# print(df)
